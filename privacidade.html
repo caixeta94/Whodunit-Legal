@@ -27,8 +27,12 @@
     <!-- MEXER AQUI SEMPRE QUE MUDAR O QUE O APP COLETA. Política publicada é
          compromisso público, e data que não acompanha a mudança faz o documento
          mentir sobre a própria vigência. 1.1 = medição de uso passou a ser
-         declarada, depois que o kit ganhou saída de telemetria. -->
-    <p class="meta"><strong>Última atualização:</strong> 5 de agosto de 2026 · <strong>Versão:</strong> 1.1</p>
+         declarada, depois que o kit ganhou saída de telemetria.
+         1.2 = o adendo "sem anúncios" deixou de afirmar que o jogo não coleta o
+         AAID. O manifesto mesclado dos AABs traz AD_ID pelo SDK do Firebase
+         Analytics, e nenhum jogo desliga a coleta — a frase antiga contradizia
+         a declaração de Segurança dos Dados da Play. -->
+    <p class="meta"><strong>Última atualização:</strong> 27 de agosto de 2026 · <strong>Versão:</strong> 1.2</p>
     <p class="meta">Aplica-se a <strong>Whodunit</strong> (<code>com.uaigames.whodunit</code>). Documento geral do estúdio <strong>NoGaming</strong>, com o adendo específico deste jogo ao final.</p>
 
     <div class="callout">
@@ -210,7 +214,7 @@
     <h3>Temporadas</h3>
     <p>Este jogo tem <strong>temporadas</strong>. Ao fim de cada uma, os rankings são arquivados e as gravações de partida daquela temporada são <strong>apagadas</strong>. O seu progresso permanente (itens, coleção, conta) não é afetado.</p>
     <h3>Este jogo não exibe anúncios</h3>
-    <p>Prevalecendo sobre as seções gerais acima: este jogo <strong>não</strong> exibe anúncios e <strong>não</strong> coleta o identificador de publicidade do Android (AAID). Não há SDK de anúncio embarcado no aplicativo.</p><p>Se isso mudar numa versão futura, esta política e a declaração de Segurança dos Dados na Google Play serão atualizadas <strong>antes</strong> da atualização chegar a você.</p>
+    <p>Prevalecendo sobre as seções gerais acima: este jogo <strong>não</strong> exibe anúncios. Não há SDK de anúncio embarcado no aplicativo, e nenhum espaço do jogo é vendido a anunciante.</p><p><strong>Sobre o identificador de publicidade (AAID).</strong> O aplicativo declara a permissão <code>com.google.android.gms.permission.AD_ID</code> porque o SDK de medição da Google (Firebase Analytics) a inclui, e esse SDK pode acessar o AAID para medir uso. <strong>Não</strong> usamos esse identificador para exibir anúncios e <strong>não</strong> o compartilhamos com anunciantes. Você pode zerá-lo ou desativá-lo em Configurações do Android → Google → Anúncios.</p><p>Se passarmos a exibir anúncios numa versão futura, esta política e a declaração de Segurança dos Dados na Google Play serão atualizadas <strong>antes</strong> da atualização chegar a você.</p>
     <h3>Este jogo não tem compras dentro do aplicativo</h3>
     <p>Prevalecendo sobre as seções gerais acima: este jogo <strong>não</strong> possui compras dentro do aplicativo. Não há cobrança em dinheiro real, e nenhum dado de pagamento é pedido, recebido ou processado por nós.</p>
     <h3>Este jogo não envia relatórios de falha</h3>
