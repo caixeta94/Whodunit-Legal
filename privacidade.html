@@ -32,11 +32,16 @@
          AAID. O manifesto mesclado dos AABs traz AD_ID pelo SDK do Firebase
          Analytics, e nenhum jogo desliga a coleta — a frase antiga contradizia
          a declaração de Segurança dos Dados da Play.
-         1.3 = anuncio premiado passou a ser declarado em TODOS os apps, por
-         decisao do operador em 27/ago (ver games.json ▸ _decisao_iap_ads). O
-         adendo "este jogo nao exibe anuncios" saiu; entrou a descricao do
-         formato que o kit implementa. -->
-    <p class="meta"><strong>Última atualização:</strong> 27 de agosto de 2026 · <strong>Versão:</strong> 1.3</p>
+         1.3 = anuncio passou a ser declarado em TODOS os apps, por decisao do
+         operador em 27/ago (ver games.json ▸ _decisao_iap_ads). O adendo "este
+         jogo nao exibe anuncios" saiu.
+         1.3, revisto em 29/ago ANTES de publicar: o adendo de anuncio foi
+         partido em quatro (ads / ads_so_premiado / ads_intersticial / ads_ssv).
+         O texto unico descrevia so a implementacao do kit, e o PopBlox — o
+         unico app NO AR — mostra intersticial ao fim da partida e nao tem SSV.
+         Sair como estava seria publicar afirmacao falsa. Frase que depende do
+         formato do anuncio agora exige flag propria. -->
+    <p class="meta"><strong>Última atualização:</strong> 29 de agosto de 2026 · <strong>Versão:</strong> 1.3</p>
     <p class="meta">Aplica-se a <strong>Whodunit</strong> (<code>com.uaigames.whodunit</code>). Documento geral do estúdio <strong>NoGaming</strong>, com o adendo específico deste jogo ao final.</p>
 
     <div class="callout">
@@ -208,7 +213,11 @@
     <h3>Medição de uso do jogo</h3>
     <p>Medimos <strong>como o jogo é usado</strong> pelo Firebase Analytics (Google): quando uma partida começa, quando você pega a recompensa diária, quando compra na loja e quando gira a roleta. Serve para uma coisa só — saber se o jogo está bom o bastante para as pessoas voltarem no dia seguinte.</p><p><strong>O que é enviado:</strong> o nome do evento e alguns números sobre ele (dia da sequência, item comprado, valor em moeda do jogo), mais o identificador de instalação, o modelo do aparelho, a versão do sistema e o país. <strong>Não</strong> enviamos seu nome, e-mail, telefone nem nada que identifique você pessoalmente, e <strong>não</strong> vendemos nem compartilhamos esses dados com anunciantes.</p><p><strong>Como recusar:</strong> em Configurações → Privacidade, desligando o envio de dados de uso. O jogo continua funcionando igual. <strong>Base legal:</strong> legítimo interesse (LGPD art. 7º, IX) — melhoria do produto.</p>
     <h3>Anúncios</h3>
-    <p>Este jogo exibe <strong>anúncio premiado</strong>: um vídeo curto que você <strong>escolhe</strong> assistir para receber uma recompensa dentro do jogo. Não há anúncio que abra sozinho, que interrompa a partida ou que apareça sem você pedir — se você nunca tocar no botão, nunca vê anúncio.</p><p><strong>Quem exibe:</strong> Google AdMob. Para escolher o que mostrar, o AdMob acessa o <strong>identificador de publicidade do Android (AAID)</strong> e dados técnicos do aparelho, e esses dados são tratados pela rede de publicidade da Google. Você pode zerar ou desativar o AAID em Configurações do Android → Google → Anúncios.</p><p><strong>Consentimento:</strong> onde a lei exige, aparece a tela de consentimento da Google (UMP) antes de qualquer anúncio carregar. Recusando, o jogo continua funcionando igual e o botão de anúncio simplesmente não aparece. <strong>Não exibimos anúncio personalizado para menores de 18 anos.</strong></p><p><strong>A recompensa é confirmada pelo servidor.</strong> O AdMob avisa o nosso servidor, por um aviso assinado, que você assistiu ao anúncio até o fim; só então a recompensa entra na sua conta. Isso existe para que ninguém receba prêmio sem ter visto o anúncio. <strong>Base legal:</strong> consentimento (LGPD art. 7º, I) para a publicidade; legítimo interesse (art. 7º, IX) para a conferência antifraude.</p>
+    <p>Este jogo exibe <strong>anúncios</strong>. Quem escolhe e entrega cada anúncio é o <strong>Google AdMob</strong>: para decidir o que mostrar, ele acessa o <strong>identificador de publicidade do Android (AAID)</strong> e dados técnicos do aparelho, e esses dados são tratados pela rede de publicidade da Google. Você pode zerar ou desativar o AAID em Configurações do Android → Google → Anúncios.</p><p><strong>Consentimento:</strong> onde a lei exige, aparece a tela de consentimento da Google (UMP) antes de qualquer anúncio carregar. <strong>Não exibimos anúncio personalizado para menores de 18 anos.</strong></p><p><strong>Base legal:</strong> consentimento (LGPD art. 7º, I).</p>
+    <h3>Anúncio premiado é o único formato</h3>
+    <p>Prevalecendo sobre a seção acima: o <strong>único</strong> anúncio deste jogo é o <strong>premiado</strong> — um vídeo curto que você <strong>escolhe</strong> assistir para receber uma recompensa dentro do jogo. Não há anúncio que abra sozinho, que interrompa a partida ou que apareça sem você pedir: se você nunca tocar no botão, nunca vê anúncio.</p><p>Se você recusar o consentimento, o jogo continua funcionando igual e o botão de anúncio simplesmente não aparece.</p>
+    <h3>A recompensa do anúncio é confirmada pelo servidor</h3>
+    <p>Quando você assiste a um anúncio premiado até o fim, o AdMob avisa o nosso servidor por um <strong>aviso assinado</strong>, e só então a recompensa entra na sua conta. Isso existe para que ninguém receba prêmio sem ter visto o anúncio.</p><p><strong>Base legal:</strong> legítimo interesse (LGPD art. 7º, IX) — prevenção a fraude.</p>
     <h3>Ranking online</h3>
     <p>Este jogo tem <strong>ranking</strong>. Quando você envia uma pontuação, ficam visíveis para outros jogadores o seu <strong>apelido</strong>, a sua <strong>pontuação</strong> e a sua <strong>posição</strong>. Não são exibidos e-mail, foto nem qualquer outro dado da sua conta.</p><p>Você pode jogar sem enviar pontuação: o ranking é opcional e desligável em Configurações. Também pode trocar o apelido a qualquer momento.</p>
     <h3>Gravação das suas jogadas (replay)</h3>
@@ -227,7 +236,7 @@
     <h2>13. Contato</h2>
     <p><strong>Encarregado de Dados (DPO):</strong> Arthur Caixeta Nogueira</p>
     <p><strong>Email (DPO + suporte):</strong> <a href="mailto:studio.blockwave@gmail.com">studio.blockwave@gmail.com</a></p>
-    <p><strong>Razão social:</strong> Caixeta Nogueira — Consultoria Financeira LTDA · São Paulo, Brasil</p>
+    <p><strong>Razão social:</strong> Caixeta Nogueira — Consultoria Financeira LTDA · CNPJ 43.522.272/0001-64 · Sede: Rua Dr Neto de Araujo, 320, Sala 1.304, Vila Mariana, São Paulo - SP, CEP 04111-001</p>
     <p><strong>ANPD (Brasil):</strong> se não estiver satisfeito com nossa resposta, contate a
        <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">ANPD</a>. Autoridades da UE:
        <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener">lista do EDPB</a>.</p>
